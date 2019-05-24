@@ -1,0 +1,28 @@
+{
+  "name": "tieto.kesko.localization.web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha",
+    "start": "node ./dist/bundle.js",
+    "build": "webpack --mode development --env.dist=false"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/sharepoint": "^2016.1.2",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.0.0",
+    "ts-loader": "^5.4.3",
+    "ts-node": "^8.1.0",
+    "webpack-cli": "^3.3.1",
+    "wilson": "0.0.5"
+  },
+  "dependencies": {
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.4.5",
+    "webpack": "^4.30.0"
+  }
+}
