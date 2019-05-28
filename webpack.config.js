@@ -2,7 +2,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/lib/translate',
+  entry: './src/localization/lib/translate',
   devtool: 'inline-source-map',
   
   module: {

@@ -1,6 +1,6 @@
 
 import { Term, Locale, Termset } from '../entity/Termset'
-import { config, headers } from './../../mocks/localized';
+import { config, headers } from './localized';
 
 export const configPromise = new Promise (( resolve, reject ) => {
     var localeConfig: Termset[] = []
