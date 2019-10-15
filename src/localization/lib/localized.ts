@@ -1,4 +1,4 @@
-
+import 'isomorphic-fetch'
 
 export const config = new Promise( (resolve, reject) => {
     const filename = "/sites/test-myk/Style%20Library/Kesko/Assets/Localization/TermSetsLabels.txt"
