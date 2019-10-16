@@ -5,8 +5,7 @@ import { Termset, Term, Locale } from '../entity/Termset';
 
 
 
-export function translate(text: string, lid: number)
-{
+const translate = (text: string, lid: number) => {
 
 	const translatePromise = new Promise( (resolve, reject) => {
 		configPromise.then(
@@ -30,7 +29,7 @@ export function translate(text: string, lid: number)
 }
 
 
-export const translateHeaders = ( name: string , localeID: number) => {
+const translateHeaders = ( name: string , localeID: number) => {
 
 	const translateHeadersPromise = new Promise( (resolve, reject) => {
 		headerPromise.then((result:Term[]) => {
@@ -46,3 +45,12 @@ export const translateHeaders = ( name: string , localeID: number) => {
 	return translateHeadersPromise
 
 }
+
+
+const localization = {
+	translate: translate,
+	translateHeaders: translateHeaders
+}
+
+export default localization
+
